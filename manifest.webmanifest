@@ -1,0 +1,19 @@
+{
+    "shortname": "catalogo_jogos",
+    "name": "Trabalho - Catalogo Jogos",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "theme-color": "#ffffff",
+    "background_color": "#00000",
+    "background-color": "#00000",
+    "description": "App criado para o primeiro trabalho de Tópicos Especiais em Sistemas de Informação  ",
+    "icons": [
+        {
+            "src": "./images/icon.png",
+            "type": "image/png",
+            "sizes": "1125x1125"
+        }
+    ]
+
+}

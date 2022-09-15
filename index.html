@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Catalogo de Jogos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./src/styloMain.css" />
+    <link rel="stylesheet" href="./src/styloJogos.css" />
+    <script src="./src/scriptBase.js"></script>
+    <script src="./src/scriptJogos.js"></script>
+  </head>
+  <body>
+    <header class="headerBar dark">
+      <div class="appName">Catalogo de Jogos</div>
+      <div class="badge warning"><span id="estado">0</span></div>
+    </header>
+
+    <div id="tela1" class="component">
+      <div class="componentHeader">
+        <h1 class="componentTitle">Meus Jogos</h1>
+        <button id="btnAdic" class="button primary">
+          <img src="./images/plus1.png" />
+        </button>
+      </div>
+      <div class="componentContent">
+        <div id="blank">
+          <img src="./images/joystick.png"
+          width="500" 
+          height="350" />
+          <p>Tão vazio...</p>
+        </div>
+        <ul id="listaDeJogos" class="list hidden"></ul>
+        </div>
+    </div>
+
+    <div id="tela2" class="component hidden">
+      <div class="componentHeader">
+        <h1 class="componentTitle">
+          Novo Jogo
+        </h1>
+      </div>
+      <div class="componentContent">
+        <div class="field">
+          <label for="inputNovoJogo">Nome do Jogo:</label>
+          <input id="inputNovoJogo" type="text" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="inputNovaDataLancamento">Data de lançamento:</label>
+          <input id="inputNovaDataLancamento" type="text" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="inputNovoGenero">Gênero do Jogo:</label>
+          <input id="inputNovoGenero" type="text" autocomplete="off" />
+        </div>
+        <div class="buttonGroup mt1 end">
+          <button id="btnCanc1" class="button quarter light">Cancelar</button>
+          <button id="btnInc" class="button quarter primary" disabled>
+            Incluir
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tela3" class="component hidden">
+      <div class="componentHeader">
+        <h1 class="componentTitle">Alteração de jogo</h1>
+      </div>
+      <div class="componentContent">
+        <div class="field">
+          <label for="inputAlteraJogo">Nome do Jogo:</label>
+          <input id="inputAlteraJogo" type="text" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="inputAlteraDataLancamento">Data de lançamento:</label>
+          <input id="inputAlteraDataLancamento" type="text" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="inputAlteraGenero">Gênero do Jogo:</label>
+          <input id="inputAlteraGenero" type="text" autocomplete="off" />
+        </div>
+        <div class="buttonGroup end mt1">
+          <button id="btnCanc2" class="button quarter light">Cancelar</button>
+          <button id="btnAlt" class="button quarter primary">Alterar</button>
+        </div>
+        <div class="buttonGroup end mt3">
+          <button id="btnDel" class="button quarter danger">
+            Apagar jogo
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
